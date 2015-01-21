@@ -40,7 +40,6 @@ public class LonelyTwitterActivity extends Activity {
 				setResult(RESULT_OK);
 				String text = bodyText.getText().toString();
 				saveInFile(text, new Date(System.currentTimeMillis()));
-				finish();
 
 			}
 		});
@@ -48,17 +47,7 @@ public class LonelyTwitterActivity extends Activity {
 
 	@Override
 	protected void onStart() {
-		// TODO Auto-generated method stub
-		User u = new Author("Joe");
-		
-		u.getName();
-		try{
-		
-			u.setName("Othername");
-		}catch (IOException e){
-			
-		}
-		
+
 		ArrayList<User> users = new ArrayList<User>();
 		
 		
