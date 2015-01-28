@@ -38,6 +38,7 @@ public abstract class LonelyTweetModel {
 		}
 		
 		LonelyTweetModel otherTweet = (LonelyTweetModel) other;
+		//return text.equals(otherTweet.text);
 		return timestamp.equals(otherTweet.timestamp) && text.equals(otherTweet.text);
 	}
 }
